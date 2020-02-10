@@ -121,7 +121,7 @@ stages{
     log_function("GitHub failed")
     }}
    } */
-  /* stage('GITLAB')
+   stage('GITLAB')
    {
    steps
    {
@@ -146,7 +146,7 @@ stages{
     failure{
     log_function("GitLab failed")
     }}
-     } */
+     } 
   
   
   
@@ -154,7 +154,7 @@ stages{
 
 
   
-stage('Jenkins'){
+/*stage('Jenkins'){
 	steps{
 			jenkins_createjob(jsondata)
 			log_function("Jenkins","A new job created successfully")
@@ -241,7 +241,7 @@ stage('Jenkins'){
 	
 
 
-stage('Bamboo')
+/*stage('Bamboo')
             {
                 steps
                 {
@@ -306,7 +306,7 @@ stage('SONARQUBE'){
                   log_function("Sonarqube failure")
                       }
                   }
-    }
+    }*/
 	
 	
 	
