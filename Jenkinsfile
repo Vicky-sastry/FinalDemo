@@ -14,7 +14,7 @@ stages{
 
 
  
-  stage('jira')
+  /*stage('jira')
   {
     steps
     {
@@ -241,7 +241,7 @@ stage('Jenkins'){
 	
 
 
-stage('Bamboo')
+/*stage('Bamboo')
             {
                 steps
                 {
@@ -344,7 +344,7 @@ stage('Nexus')
     }
     
                  }
-    }
+    }*/
             
 
 	
