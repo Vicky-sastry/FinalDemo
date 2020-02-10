@@ -18,24 +18,24 @@ stages{
   {
     steps
     {
-          jira_create_jsondatadatadatadatadata(jsondatadatadatadatadata)
+          jira_create_jsondata(jsondata)
           log_function("JIRA","Project created")
-          jira_create_issue_jsondatadatadatadatadata(jsondatadatadatadatadata)
+          jira_create_issue_jsondata(jsondata)
           log_function("JIRA","Issue created")
-          jira_create_subtask_jsondatadatadatadatadata(jsondatadatadatadatadata)
+          jira_create_subtask_jsondata(jsondata)
           log_function("JIRA","Subtask created")
-          jira_add_comment1(jsondatadatadatadatadata)
+          jira_add_comment1(jsondata)
           log_function("JIRA","Comment added")
-          jira_collect_issue(jsondatadatadatadatadata)
+          jira_collect_issue(jsondata)
           log_function("JIRA","Issue collected")
-          jira_collect_particular_issue(jsondatadatadatadatadata)
+          jira_collect_particular_issue(jsondata)
           log_function("JIRA","Issue collected")
-          jira_summary_of_project(jsondatadatadatadatadata)
+          jira_summary_of_project(jsondata)
           log_function("JIRA","Project summary collected")
-          jira_get_comments_of_issue(jsondatadatadatadatadata)
+          jira_get_comments_of_issue(jsondata)
           log_function("JIRA","Comments collected")
-          //jira_delete_issue_jsondatadatadatadatadata(jsondatadatadatadatadata)
-          //jira_delete_project(jsondatadatadatadatadata)  
+          //jira_delete_issue_jsondata(jsondata)
+          //jira_delete_project(jsondata)  
     }
     post
     {
@@ -157,23 +157,23 @@ stage('Bitbucket')
             {
                 steps
                  {
-                    Bbproject(jsondatadatadatadatadatadata)
+                    Bbproject(jsondatadata)
                     log_function("Bitbucket","Project created successfully")
-                    Bbrepo(jsondatadatadatadatadatadata)
+                    Bbrepo(jsondatadata)
                     log_function("Bitbucket","Repo created successfully")
-                    Codepush(jsondatadatadatadatadatadata)
+                    Codepush(jsondatadata)
                     log_function("Bitbucket","Code is pushed successfully from Github")
-                    Bbbranch(jsondatadatadatadatadatadata)
+                    Bbbranch(jsondatadata)
                     log_function("Bitbucket","Dev branch is created successfully")
-                    Bbbranch1(jsondatadatadatadatadatadata)
+                    Bbbranch1(jsondatadata)
                     log_function("Bitbucket","QA branch is created successfully")
-                    Bbbranch2(jsondatadatadatadatadatadata)
+                    Bbbranch2(jsondatadata)
                     log_function("Bitbucket","Prod branch is created successfully")
-                    BBcollector(jsondatadatadatadatadatadata)
+                    BBcollector(jsondatadata)
                     log_function("Bitbucket","All collector functions executed successfully")
-             //     Bbdeletebranch2(jsondatadatadatadatadatadata)
+             //     Bbdeletebranch2(jsondatadata)
               //    log_function("Bitbucket","Prod branch is deleted successfully")
-              //    Bbdeleterepo(jsondatadatadatadatadatadata)
+              //    Bbdeleterepo(jsondatadata)
               //    log_function("Bitbucket","Repo is deleted successfully")
                   
             }
@@ -188,7 +188,7 @@ stage('Bitbucket')
             }    
 stage('Jenkins'){
 	steps{
-			jenkins_createjob(jsondatadatadatadatadatadata)
+			jenkins_createjob(jsondatadata)
 			log_function("Jenkins","A new job created successfully")
 			jenkins_deletejob("task1")
 			log_function("Jenkins","Job deleted successfully")
