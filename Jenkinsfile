@@ -14,7 +14,7 @@ stages{
 
 
  
- /* stage('jira')
+  stage('jira')
   {
     steps
     {
@@ -52,7 +52,7 @@ stages{
   
   
   
-/*  stage("Confluence")
+  stage("Confluence")
   {
   steps{
   confluenceConnectorSpaceJ(jsondata)
@@ -86,7 +86,7 @@ stages{
   log_function("Confluence","failed")
   }
   }
-} //stage end*/
+} //stage end
   
   
   
@@ -95,7 +95,7 @@ stages{
   
   
   
-/*stage('GITHUB')
+stage('GITHUB')
    {
    steps
    {
@@ -120,8 +120,8 @@ stages{
     failure{
     log_function("GitHub failed")
     }}
-   } */
- /*  stage('GITLAB')
+   } 
+   stage('GITLAB')
    {
    steps
    {
@@ -154,7 +154,7 @@ stages{
 
 
   
-/*stage('Jenkins'){
+stage('Jenkins'){
 	steps{
 			jenkins_createjob(jsondata)
 			log_function("Jenkins","A new job created successfully")
@@ -201,7 +201,7 @@ stages{
 	
 	
 	
-	/*stage('Bitbucket')
+	stage('Bitbucket')
             {
                 steps
                  {
@@ -233,7 +233,7 @@ stages{
     }
     }
            
-            }  */
+            }  
 	
 	
 	
@@ -241,7 +241,7 @@ stages{
 	
 
 
-/*stage('Bamboo')
+stage('Bamboo')
             {
                 steps
                 {
@@ -306,7 +306,7 @@ stage('SONARQUBE'){
                   log_function("Sonarqube failure")
                       }
                   }
-    }*/
+    }
 	
 	
 	
@@ -351,7 +351,7 @@ stage('Nexus')
 	
 	
 	
-	/*stage('AZURE')
+	stage('AZURE')
         {
             steps
             {
@@ -389,7 +389,7 @@ stage('Nexus')
       }
     }
                 
-      }*/
+      }
 	
 	
 	
