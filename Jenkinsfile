@@ -14,7 +14,7 @@ stages{
 
 
  
-  stage('jira')
+ /* stage('jira')
   {
     steps
     {
@@ -95,7 +95,7 @@ stages{
   
   
   
-stage('GITHUB')
+/*stage('GITHUB')
    {
    steps
    {
@@ -120,8 +120,8 @@ stage('GITHUB')
     failure{
     log_function("GitHub failed")
     }}
-   }
-  /* stage('GITLAB')
+   } */
+   stage('GITLAB')
    {
    steps
    {
@@ -146,7 +146,7 @@ stage('GITHUB')
     failure{
     log_function("GitLab failed")
     }}
-     } */ 
+     } 
   
   
   
