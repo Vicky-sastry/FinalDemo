@@ -52,7 +52,7 @@ stages{
   
   
   
-  stage("Confluence")
+/*  stage("Confluence")
   {
   steps{
   confluenceConnectorSpaceJ(jsondata)
@@ -86,7 +86,7 @@ stages{
   log_function("Confluence","failed")
   }
   }
-} //stage end
+} //stage end*/
   
   
   
