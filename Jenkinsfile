@@ -201,7 +201,7 @@ stage('Jenkins'){
 	
 	
 	
-	stage('Bitbucket')
+	/*stage('Bitbucket')
             {
                 steps
                  {
@@ -233,7 +233,7 @@ stage('Jenkins'){
     }
     }
            
-            }  
+            }  */
 	
 	
 	
