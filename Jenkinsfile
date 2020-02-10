@@ -121,7 +121,7 @@ stage('GITHUB')
     log_function("GitHub failed")
     }}
    }
-   stage('GITLAB')
+  /* stage('GITLAB')
    {
    steps
    {
@@ -146,7 +146,7 @@ stage('GITHUB')
     failure{
     log_function("GitLab failed")
     }}
-     }  
+     } */ 
   
   
   
