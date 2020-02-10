@@ -18,11 +18,11 @@ stages{
   {
     steps
     {
-          jira_create_jsondata(jsondata)
+          jira_create_json(jsondata)
           log_function("JIRA","Project created")
-          jira_create_issue_jsondata(jsondata)
+          jira_create_issue_json(jsondata)
           log_function("JIRA","Issue created")
-          jira_create_subtask_jsondata(jsondata)
+          jira_create_subtask_json(jsondata)
           log_function("JIRA","Subtask created")
           jira_add_comment1(jsondata)
           log_function("JIRA","Comment added")
@@ -34,7 +34,7 @@ stages{
           log_function("JIRA","Project summary collected")
           jira_get_comments_of_issue(jsondata)
           log_function("JIRA","Comments collected")
-          //jira_delete_issue_jsondata(jsondata)
+          //jira_delete_issue_json(jsondata)
           //jira_delete_project(jsondata)  
     }
     post
