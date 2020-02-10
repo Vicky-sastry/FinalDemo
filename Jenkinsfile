@@ -121,7 +121,7 @@ stages{
     log_function("GitHub failed")
     }}
    } */
-   stage('GITLAB')
+ /*  stage('GITLAB')
    {
    steps
    {
@@ -311,7 +311,7 @@ stage('SONARQUBE'){
 	
 	
 
-stage('Nexus')
+/*stage('Nexus')
             {
                 steps
                  { 
@@ -344,7 +344,7 @@ stage('Nexus')
     }
     
                  }
-    }
+    }*/
             
 
 	
