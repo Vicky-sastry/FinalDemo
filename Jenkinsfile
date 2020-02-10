@@ -138,7 +138,7 @@ stage('GITHUB')
      gitlabbranchrmv(jsondatadata)
      log_function(" gitlab ","branch deleted succesfully")
      //gitlabprojremove(jsondatadata)
-     log_function(" gitlab ","project deleted succesfully")*/
+     log_function(" gitlab ","project deleted succesfully")
      gitlabprojectdetails()
      log_function(" gitlab ","collected gitlab project succesfully")
      }
