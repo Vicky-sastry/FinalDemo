@@ -311,7 +311,7 @@ stage('SONARQUBE'){
 	
 	
 
-/*stage('Nexus')
+stage('Nexus')
             {
                 steps
                  { 
@@ -344,14 +344,14 @@ stage('SONARQUBE'){
     }
     
                  }
-    }*/
+    }
             
 
 	
 	
 	
 	
-	stage('AZURE')
+	/*stage('AZURE')
         {
             steps
             {
@@ -389,7 +389,7 @@ stage('SONARQUBE'){
       }
     }
                 
-      }
+      }*/
 	
 	
 	
